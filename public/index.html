@@ -1,344 +1,556 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS Website</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SASS Website</title>
-  <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="tailwind.css" />
-</head>
+  <body class="font-Manrope bg-mainBgcl">
+    <!-- HEADER-->
+    <header class="bg-white shadow-navShadow fixed z-50 w-full">
+      <nav class="text-black container flex h-[7.5rem] items-center">
+        <div class="mr-auto">
+          <p class="text-4xl font-extrabold tracking-tighter">Prosperico</p>
+        </div>
+        <ul class="flex font-medium text-xl gap-8 mr-[3.125rem]">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <a
+          class="inline-block text-lg font-medium bg-cl-1 text-white py-5 px-8 rounded-full"
+          href="#"
+          >Sign up</a
+        >
+      </nav>
+    </header>
 
-<body class="font-Manrope bg-mainBgcl">
-  <!-- HEADER-->
-  <header class="bg-white shadow-navShadow fixed z-50 w-full">
-    <nav class="text-black container flex h-[7.5rem] items-center">
-      <div class="mr-auto">
-        <p class="text-4xl font-extrabold tracking-tighter">Prosperico</p>
-      </div>
-      <ul class="flex font-medium text-xl gap-8 mr-[3.125rem]">
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">FAQ's</a></li>
-        <li><a href="#">Support</a></li>
-      </ul>
-      <a class="inline-block text-lg font-medium bg-cl-1 text-white py-5 px-8 rounded-full" href="#">Sign up</a>
-    </nav>
-  </header>
+    <main>
+      <!-- Hero section -->
+      <section class="pt-[7.5rem] mb-[7rem]">
+        <div class="container pt-[5rem] relative">
+          <div class="text-center max-w-xl mx-auto mb-20">
+            <p class="subtitle mb-11">
+              7 Day Free Trial - No Credit card required
+            </p>
+            <h1
+              class="text-[5.625rem] font-extrabold tracking-[-5px] leading-[.95] mb-14"
+            >
+              Unlock the
+              <span class="inline-block text-lightBlue">Power</span> of Data
+            </h1>
+            <img
+              class="absolute top-[23.5%] left-[56.5%]"
+              src="../assets/hero-decoration-img.svg"
+              alt=""
+            />
+            <p
+              class="text-[1.875rem] font-medium leading-[1.2] tracking-[-1px] mb-[2.875rem]"
+            >
+              Turn Data into Actionable Insights with Our SaaS Dashboard
+            </p>
+            <a class="btn-skt bg-cl-1" href="#">Get Started</a>
+          </div>
+          <div>
+            <img
+              class="max-full block"
+              src="../assets/SaaS Dashboard.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
 
-  <main>
-    <!-- Hero section -->
-    <section class="pt-[7.5rem] mb-[7rem]">
-      <div class="container pt-[5rem] relative">
-        <div class="text-center max-w-xl mx-auto mb-20">
-          <p class="subtitle mb-11">
-            7 Day Free Trial - No Credit card required
+      <!-- Feature section -->
+
+      <section class="container mb-[9.375rem]">
+        <div
+          class="text-center max-w-[40rem] mx-auto flex flex-col gap-[1.375rem] items-center mb-14"
+        >
+          <p class="subtitle">Features</p>
+          <h2
+            class="text-[4.375rem] font-extrabold leading-[1] tracking-[-3.85px]"
+          >
+            Real-Time Insights,<span class="inline-block text-lightPurple"
+              >Real-Time Results</span
+            >
+          </h2>
+          <p class="font-medium text-2xl text-textcl-1 max-w-md">
+            Saas dashboard that enable users to perform various tasks and
+            activities related to their business
           </p>
-          <h1 class="text-[5.625rem] font-extrabold tracking-[-5px] leading-[.95] mb-14">
-            Unlock the
-            <span class="inline-block text-lightBlue">Power</span> of Data
-          </h1>
-          <img class="absolute top-[23.5%] left-[56.5%]" src="../assets/hero-decoration-img.svg" alt="" />
-          <p class="text-[1.875rem] font-medium leading-[1.2] tracking-[-1px] mb-[2.875rem]">
-            Turn Data into Actionable Insights with Our SaaS Dashboard
+        </div>
+        <!-- Features card -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          <div
+            class="py-10 px-[2.125rem] bg-cl-1 rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow"
+          >
+            <img src="../assets/data-visualization.png" alt="" />
+            <h3
+              class="text-white text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]"
+            >
+              Data Visualization
+            </h3>
+            <p class="text-xl font-medium text-textcl-2 tracking-[-1px]">
+              The ability to present complex data in a visually understandable
+              way, such as through charts.
+            </p>
+          </div>
+          <div
+            class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow"
+          >
+            <img src="../assets/integration.png" alt="" />
+            <h3
+              class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]"
+            >
+              Integration
+            </h3>
+            <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
+              Seamless integration with other software and tools that a business
+              uses, creating a unified system
+            </p>
+          </div>
+          <div
+            class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow"
+          >
+            <img src="../assets/customization.png" alt="" />
+            <h3
+              class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]"
+            >
+              Customization
+            </h3>
+            <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
+              Allowing users to tailor the dashboard to their specific needs and
+              preferences.
+            </p>
+          </div>
+          <div
+            class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow"
+          >
+            <img src="../assets/reporting.png" alt="" />
+            <h3
+              class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]"
+            >
+              Reporting
+            </h3>
+            <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
+              Generating detailed reports that provide insights into the
+              business's performance.
+            </p>
+          </div>
+          <div
+            class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow"
+          >
+            <img src="../assets/user-access-control.png" alt="" />
+            <h3
+              class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]"
+            >
+              User Access Control
+            </h3>
+            <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
+              Managing who can access and interact with the dashboard, ensuring
+              data security.
+            </p>
+          </div>
+          <div
+            class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow"
+          >
+            <img src="../assets/collabortaion-tool.png" alt="" />
+            <h3
+              class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 leading-[-1.65px]"
+            >
+              Collaboration Tools
+            </h3>
+            <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
+              Features that facilitate teamwork and communication among team
+              members.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+
+      <section class="container grid grid-cols-2 mb-[6.25rem]">
+        <div>
+          <p class="subtitle mb-10">Testimonials</p>
+          <h2
+            class="text-[4.375rem] leading-[1] tracking-[-3.85px] font-extrabold mb-8"
+          >
+            What <span class="text-lightPink inline-block">customer </span>say
+            about us
+          </h2>
+          <p
+            class="text-2xl font-medium text-textcl-3 leading-[1.2] tracking-[ -0.805px] mb-8"
+          >
+            Saas dashboard that enable users to perform various tasks and
+            activities related to their business
           </p>
-          <a class="btn-skt bg-cl-1" href="#">Get Started</a>
+          <!-- left right btn container -->
+          <div class="flex items-center gap-7">
+            <div
+              class="w-10 h-10 rounded-full border border-solid border-lightPink bg-white flex items-center justify-center shadow-leftRightShadow"
+            >
+              <img src="../assets/left-arrow.svg" alt="" />
+            </div>
+            <div
+              class="w-10 h-10 rounded-full border border-solid border-lightPink bg-white flex items-center justify-center shadow-leftRightShadow"
+            >
+              <img src="../assets/right-arrow.svg" alt="" />
+            </div>
+          </div>
         </div>
         <div>
-          <img class="max-full block" src="../assets/SaaS Dashboard.png" alt="" />
+          <img class="block" src="../assets/bi_chat-quote-fill.svg" alt="" />
+          <p
+            class="text-[1.875rem] tracking-[ -1.05px] leading-[1.2] font-semibold mt-5 mb-9"
+          >
+            Our business was in chaos before we started using this Saas
+            dashboard. We were drowning in data and couldn't make sense of it.
+            Thanks to this amazing tool, we now have clarity, and our
+            decision-making has become precise and data-driven.
+          </p>
+          <div class="flex gap-6 items-center">
+            <div>
+              <img class="w-full block" src="../assets/uiface.png" alt="" />
+            </div>
+            <div>
+              <p class="text-2xl font-bold tracking-[-1.05px]">Sarah Johnson</p>
+              <span
+                class="text-xl font-medium tracking-[-0.805px] text-textcl-1"
+                >Marketing Manager</span
+              >
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Feature section -->
+      <!-- Pricing section -->
 
-    <section class="container mb-[9.375rem]">
-      <div class="text-center max-w-[40rem] mx-auto flex flex-col gap-[1.375rem] items-center mb-14">
-        <p class="subtitle">Features</p>
-        <h2 class="text-[4.375rem] font-extrabold leading-[1] tracking-[-3.85px]">
-          Real-Time Insights,<span class="inline-block text-lightPurple">Real-Time Results</span>
-        </h2>
-        <p class="font-medium text-2xl text-textcl-1 max-w-md">
-          Saas dashboard that enable users to perform various tasks and
-          activities related to their business
-        </p>
-      </div>
-      <!-- Features card -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+      <section class="container mb-[5.125rem]">
         <div
-          class="py-10 px-[2.125rem] bg-cl-1 rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow">
-          <img src="../assets/data-visualization.png" alt="" />
-          <h3 class="text-white text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]">
-            Data Visualization
-          </h3>
-          <p class="text-xl font-medium text-textcl-2 tracking-[-1px]">
-            The ability to present complex data in a visually understandable
-            way, such as through charts.
-          </p>
+          class="text-center max-w-md mx-auto flex flex-col items-center mb-[3.75rem]"
+        >
+          <p class="subtitle mb-5">Plans & Features</p>
+          <h2
+            class="text-[4.375rem] tracking-[-3.85px] mb-[3.75rem] leading-[1]"
+          >
+            Pricing
+          </h2>
+          <!-- Toggle container -->
+          <div class="flex items-center gap-[2.125rem]">
+            <p class="text-2xl font-medium tracking-[-0.805px] text-textcl-1">
+              Monthly
+            </p>
+            <div>
+              <input id="check" class="hidden" type="checkbox" />
+              <label
+                class="inline-block w-[8rem] h-[3.75rem] bg-white rounded-full shadow-toogleBtnShadow relative after:content-[''] after:w-[3.125rem] after:h-[3.125rem] after:absolute after:rounded-full after:bg-black after:m-[.3125rem]"
+                name="check"
+                for="check"
+              ></label>
+            </div>
+            <p class="text-2xl font-medium tracking-[-0.805px] text-textcl-1">
+              Yearly
+            </p>
+          </div>
         </div>
-        <div
-          class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow">
-          <img src="../assets/integration.png" alt="" />
-          <h3 class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]">
-            Integration
-          </h3>
-          <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
-            Seamless integration with other software and tools that a business
-            uses, creating a unified system
-          </p>
-        </div>
-        <div
-          class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow">
-          <img src="../assets/customization.png" alt="" />
-          <h3 class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]">
-            Customization
-          </h3>
-          <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
-            Allowing users to tailor the dashboard to their specific needs and
-            preferences.
-          </p>
-        </div>
-        <div
-          class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow">
-          <img src="../assets/reporting.png" alt="" />
-          <h3 class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]">
-            Reporting
-          </h3>
-          <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
-            Generating detailed reports that provide insights into the
-            business's performance.
-          </p>
-        </div>
-        <div
-          class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow">
-          <img src="../assets/user-access-control.png" alt="" />
-          <h3 class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 tracking-[-1.65px]">
-            User Access Control
-          </h3>
-          <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
-            Managing who can access and interact with the dashboard, ensuring
-            data security.
-          </p>
-        </div>
-        <div
-          class="py-10 px-[2.125rem] bg-white rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow">
-          <img src="../assets/collabortaion-tool.png" alt="" />
-          <h3 class="text-black text-[1.875rem] font-extrabold mt-10 mb-5 leading-[-1.65px]">
-            Collaboration Tools
-          </h3>
-          <p class="text-xl font-medium text-textcl-3 tracking-[-1px]">
-            Features that facilitate teamwork and communication among team
-            members.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials section -->
-
-    <section class="container grid grid-cols-2 mb-[6.25rem]">
-      <div>
-        <p class="subtitle mb-10">Testimonials</p>
-        <h2 class="text-[4.375rem] leading-[1] tracking-[-3.85px] font-extrabold mb-8">
-          What <span class="text-lightPink inline-block">customer </span>say
-          about us
-        </h2>
-        <p class="text-2xl font-medium text-textcl-3 leading-[1.2] tracking-[ -0.805px] mb-8">
-          Saas dashboard that enable users to perform various tasks and
-          activities related to their business
-        </p>
-        <!-- left right btn container -->
-        <div class="flex items-center gap-7">
+        <!-- pricing cards -->
+        <div class="grid grid-cols-3 gap-[1.125rem]">
           <div
-            class="w-10 h-10 rounded-full border border-solid border-lightPink bg-white flex items-center justify-center shadow-leftRightShadow">
-            <img src="../assets/left-arrow.svg" alt="" />
+            class="rounded-[2rem] shadow-cardShadow py-[2.8125rem] px-[3.125rem] bg-white text-center"
+          >
+            <p
+              class="text-[2.5rem] font-bold tracking-[-1.4px] leading-[1.2] mb-[3.25rem]"
+            >
+              Starter
+            </p>
+            <h3
+              class="font-bold text-[7.875rem] leading-[1] tracking-[-4.41px] mb-[3.25rem]"
+            >
+              <span class="inline-block text-[3.375rem] -translate-y-[3.25rem]"
+                >&#36;</span
+              >29
+            </h3>
+            <ul class="flex flex-col gap-8 mb-[4.375rem]">
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  Data Visualization
+                </p>
+              </li>
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  Real-Time Analytics
+                </p>
+              </li>
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  Customization
+                </p>
+              </li>
+            </ul>
+            <div class="flex gap-3 items-start mb-[3.75rem]">
+              <img class="" src="../assets/info.svg" alt="" />
+              <p
+                class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] text-start"
+              >
+                Small businesses and startups looking to gain data insights
+              </p>
+            </div>
+            <a class="btn-skt bg-lightPink" href="#">Learn More</a>
           </div>
           <div
-            class="w-10 h-10 rounded-full border border-solid border-lightPink bg-white flex items-center justify-center shadow-leftRightShadow">
-            <img src="../assets/right-arrow.svg" alt="" />
+            class="rounded-[2rem] shadow-cardShadow py-[2.8125rem] px-[3.125rem] bg-white text-center"
+          >
+            <p
+              class="text-[2.5rem] font-bold tracking-[-1.4px] leading-[1.2] mb-[3.25rem]"
+            >
+              Business
+            </p>
+            <h3
+              class="font-bold text-[7.875rem] leading-[1] tracking-[-4.41px] mb-[3.25rem]"
+            >
+              <span class="inline-block text-[3.375rem] -translate-y-[3.25rem]"
+                >&#36;</span
+              >79
+            </h3>
+            <ul class="flex flex-col gap-8 mb-[4.375rem] text-start">
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  All Basic Plan Features
+                </p>
+              </li>
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  Integrations
+                </p>
+              </li>
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  Advanced Reporting
+                </p>
+              </li>
+            </ul>
+            <div class="flex gap-3 items-start mb-[3.75rem]">
+              <img class="" src="../assets/info.svg" alt="" />
+              <p
+                class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] text-start"
+              >
+                Small businesses and startups looking to gain data insights
+              </p>
+            </div>
+            <a class="btn-skt bg-lightPink" href="#">Learn More</a>
+          </div>
+          <div
+            class="rounded-[2rem] shadow-cardShadow py-[2.8125rem] px-[3.125rem] bg-white text-center"
+          >
+            <p
+              class="text-[2.5rem] font-bold tracking-[-1.4px] leading-[1.2] mb-[3.25rem]"
+            >
+              Enterprise
+            </p>
+            <h3
+              class="font-bold text-[7.875rem] leading-[1] tracking-[-4.41px] mb-[3.25rem]"
+            >
+              <span class="inline-block text-[3.375rem] -translate-y-[3.25rem]"
+                >&#36;</span
+              >149
+            </h3>
+            <ul class="flex flex-col gap-8 mb-[4.375rem]">
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  All Pro Plan Features
+                </p>
+              </li>
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  Full Access to API
+                </p>
+              </li>
+              <li class="flex items-center gap-5">
+                <img
+                  class="block"
+                  src="../assets/teenyicons_tick-outline.svg"
+                  alt=""
+                />
+                <p
+                  class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]"
+                >
+                  Dedicated Support
+                </p>
+              </li>
+            </ul>
+            <div class="flex gap-3 items-start mb-[3.75rem]">
+              <img class="" src="../assets/info.svg" alt="" />
+              <p
+                class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] text-start"
+              >
+                Larger enterprises requiring advanced data solutions and
+                personalized support.
+              </p>
+            </div>
+            <a class="btn-skt bg-lightBlue" href="#">Learn More</a>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Cta section -->
+
+      <section class="bg-cl-4 mb-[5.625rem]">
+        <div class="container py-[6.375rem] relative">
+          <h2
+            class="text-[4.375rem] font-extrabold tracking-[-3.85px] leading-[94.1%] mb-[3.125rem]"
+          >
+            Unlock Your Business <br />
+            Potential Today!
+          </h2>
+          <p
+            class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] mb-[3.125rem]"
+          >
+            Small businesses and startups looking to <br />
+            gain data insights
+          </p>
+          <a class="btn-skt bg-cl-1" href="#">Get Started</a>
+          <div class="absolute bottom-20 right-0">
+            <img class="w-full block" src="../assets/img-1.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+
+      <section class="container">
+        <div class="text-center mb-14">
+          <p class="subtitle mb-10">Frequently asked quations</p>
+          <h2
+            class="text-[4.375rem] font-extrabold tracking-[-3.85px] leading-[1]"
+          >
+            FAQs
+          </h2>
+        </div>
+        <!-- accordin -->
+        <div
+          class="bg-cl-1 rounded-[2.5rem] py-[4.25rem] px-[5.25rem] text-white"
+        >
+          <div
+            class="flex justify-between items-center gap-20 border-b border-solid border-cl-5 py-7"
+          >
+            <p class="text-2xl tracking-[ -1.05px] leading-[1.15] font-medium">
+              What is a Saas dashboard, and how can it benefit my business?
+            </p>
+            <img src="../assets/plus sign.svg" alt="" />
+          </div>
+          <div
+            class="flex justify-between items-center gap-20 border-b border-solid border-cl-5 py-7"
+          >
+            <p class="text-2xl tracking-[ -1.05px] leading-[1.15] font-medium">
+              Is the Saas dashboard compatible with other software and tools we
+              use in our business?
+            </p>
+            <img src="../assets/plus sign.svg" alt="" />
+          </div>
+          <div
+            class="flex justify-between items-center gap-20 border-b border-solid border-cl-5 py-7"
+          >
+            <p class="text-2xl tracking-[ -1.05px] leading-[1.15] font-medium">
+              How do I get started with the Saas dashboard, and is there a
+              learning curve?
+            </p>
+            <img src="../assets/plus sign.svg" alt="" />
+          </div>
+          <div
+            class="flex justify-between items-center gap-20 border-b border-solid border-cl-5 py-7"
+          >
+            <p class="text-2xl tracking-[ -1.05px] leading-[1.15] font-medium">
+              What kind of customer support do you offer?
+            </p>
+            <img src="../assets/plus sign.svg" alt="" />
+          </div>
+          <div
+            class="flex justify-between items-center gap-20 border-b border-solid border-cl-5 py-7"
+          >
+            <p class="text-2xl tracking-[ -1.05px] leading-[1.15] font-medium">
+              Can I customize the Saas dashboard to match our business's unique
+              requirements?
+            </p>
+            <img src="../assets/plus sign.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
       <div>
-        <img class="block" src="../assets/bi_chat-quote-fill.svg" alt="" />
-        <p class="text-[1.875rem] tracking-[ -1.05px] leading-[1.2] font-semibold mt-5 mb-9">
-          Our business was in chaos before we started using this Saas
-          dashboard. We were drowning in data and couldn't make sense of it.
-          Thanks to this amazing tool, we now have clarity, and our
-          decision-making has become precise and data-driven.
-        </p>
-        <div class="flex gap-6 items-center">
-          <div>
-            <img class="w-full block" src="../assets/uiface.png" alt="" />
-          </div>
-          <div>
-            <p class="text-2xl font-bold tracking-[-1.05px]">Sarah Johnson</p>
-            <span class="text-xl font-medium tracking-[-0.805px] text-textcl-1">Marketing Manager</span>
-          </div>
-        </div>
+        
       </div>
-    </section>
+    </footer>
 
-    <!-- Pricing section -->
-
-    <section class="container mb-[5.125rem]">
-      <div class="text-center max-w-md mx-auto flex flex-col items-center mb-[3.75rem]">
-        <p class="subtitle mb-5">Plans & Features</p>
-        <h2 class="text-[4.375rem] tracking-[-3.85px] mb-[3.75rem] leading-[1]">
-          Pricing
-        </h2>
-        <!-- Toggle container -->
-        <div class="flex items-center gap-[2.125rem]">
-          <p class="text-2xl font-medium tracking-[-0.805px] text-textcl-1">
-            Monthly
-          </p>
-          <div>
-            <input id="check" class="hidden" type="checkbox" />
-            <label
-              class="inline-block w-[8rem] h-[3.75rem] bg-white rounded-full shadow-toogleBtnShadow relative after:content-[''] after:w-[3.125rem] after:h-[3.125rem] after:absolute after:rounded-full after:bg-black after:m-[.3125rem]"
-              name="check" for="check"></label>
-          </div>
-          <p class="text-2xl font-medium tracking-[-0.805px] text-textcl-1">
-            Yearly
-          </p>
-        </div>
-      </div>
-      <!-- pricing cards -->
-      <div class="grid grid-cols-3 gap-[1.125rem]">
-        <div class="rounded-[2rem] shadow-cardShadow py-[2.8125rem] px-[3.125rem] bg-white text-center">
-          <p class="text-[2.5rem] font-bold tracking-[-1.4px] leading-[1.2] mb-[3.25rem]">
-            Starter
-          </p>
-          <h3 class="font-bold text-[7.875rem] leading-[1] tracking-[-4.41px] mb-[3.25rem]">
-            <span class="inline-block text-[3.375rem] -translate-y-[3.25rem]">&#36;</span>29
-          </h3>
-          <ul class="flex flex-col gap-8 mb-[4.375rem]">
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                Data Visualization
-              </p>
-            </li>
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                Real-Time Analytics
-              </p>
-            </li>
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                Customization
-              </p>
-            </li>
-          </ul>
-          <div class="flex gap-3 items-start mb-[3.75rem]">
-            <img class="" src="../assets/info.svg" alt="" />
-            <p class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] text-start">
-              Small businesses and startups looking to gain data insights
-            </p>
-          </div>
-          <a class="btn-skt bg-lightPink" href="#">Learn More</a>
-        </div>
-        <div class="rounded-[2rem] shadow-cardShadow py-[2.8125rem] px-[3.125rem] bg-white text-center">
-          <p class="text-[2.5rem] font-bold tracking-[-1.4px] leading-[1.2] mb-[3.25rem]">
-            Business
-          </p>
-          <h3 class="font-bold text-[7.875rem] leading-[1] tracking-[-4.41px] mb-[3.25rem]">
-            <span class="inline-block text-[3.375rem] -translate-y-[3.25rem]">&#36;</span>79
-          </h3>
-          <ul class="flex flex-col gap-8 mb-[4.375rem] text-start">
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                All Basic Plan Features
-              </p>
-            </li>
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                Integrations
-              </p>
-            </li>
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                Advanced Reporting
-              </p>
-            </li>
-          </ul>
-          <div class="flex gap-3 items-start mb-[3.75rem]">
-            <img class="" src="../assets/info.svg" alt="" />
-            <p class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] text-start">
-              Small businesses and startups looking to gain data insights
-            </p>
-          </div>
-          <a class="btn-skt bg-lightPink" href="#">Learn More</a>
-        </div>
-        <div class="rounded-[2rem] shadow-cardShadow py-[2.8125rem] px-[3.125rem] bg-white text-center">
-          <p class="text-[2.5rem] font-bold tracking-[-1.4px] leading-[1.2] mb-[3.25rem]">
-            Enterprise
-          </p>
-          <h3 class="font-bold text-[7.875rem] leading-[1] tracking-[-4.41px] mb-[3.25rem]">
-            <span class="inline-block text-[3.375rem] -translate-y-[3.25rem]">&#36;</span>149
-          </h3>
-          <ul class="flex flex-col gap-8 mb-[4.375rem]">
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                All Pro Plan Features
-              </p>
-            </li>
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                Full Access to API
-              </p>
-            </li>
-            <li class="flex items-center gap-5">
-              <img class="block" src="../assets/teenyicons_tick-outline.svg" alt="" />
-              <p class="text-textcl-1 text-2xl font-medium tracking-[-0.805px] leading-[1]">
-                Dedicated Support
-              </p>
-            </li>
-          </ul>
-          <div class="flex gap-3 items-start mb-[3.75rem]">
-            <img class="" src="../assets/info.svg" alt="" />
-            <p class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] text-start">
-              Larger enterprises requiring advanced data solutions and
-              personalized support.
-            </p>
-          </div>
-          <a class="btn-skt bg-lightBlue" href="#">Learn More</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cta section -->
-
-    <section class="bg-cl-4">
-      <div class="container py-[6.375rem] relative">
-        <h2 class="text-[4.375rem] font-extrabold tracking-[-3.85px] leading-[94.1%] mb-[3.125rem]">
-          Unlock Your Business <br />
-          Potential Today!
-        </h2>
-        <p class="text-xl font-medium text-textcl-1 tracking-[-0.7px] leading-[1.18] mb-[3.125rem]">
-          Small businesses and startups looking to <br />
-          gain data insights
-        </p>
-        <a class="btn-skt bg-cl-1" href="#">Get Started</a>
-        <div class="absolute bottom-20 right-0">
-          <img class="w-full block" src="../assets/img-1.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-  </main>
-
-  <!-- Footer -->
-
-  <div class="h-40"></div>
-  <script src="../js/script.js"></script>
-</body>
-
+    <div class="h-40"></div>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
