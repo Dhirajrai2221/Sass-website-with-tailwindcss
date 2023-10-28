@@ -87,7 +87,7 @@
           </p>
         </div>
         <!-- Features card -->
-        <div class="grid grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           <div
             class="py-10 px-[2.125rem] bg-cl-1 rounded-[2rem] text-center flex flex-col items-center shadow-cardShadow"
           >
@@ -177,7 +177,58 @@
 
       <!-- Testimonials section -->
 
+      <section class="container grid grid-cols-2 mb-[6.25rem]">
+        <div>
+          <p class="subtitle mb-10">Testimonials</p>
+          <h2
+            class="text-[4.375rem] leading-[1] tracking-[-3.85px] font-extrabold mb-8"
+          >
+            What <span class="text-lightPink inline-block">customer </span>say
+            about us
+          </h2>
+          <p
+            class="text-2xl font-medium text-textcl-3 leading-[1.2] tracking-[ -0.805px] mb-8"
+          >
+            Saas dashboard that enable users to perform various tasks and
+            activities related to their business
+          </p>
+          <!-- left right btn container -->
+          <div class="flex items-center gap-7">
+            <div
+              class="w-10 h-10 rounded-full border border-solid border-lightPink bg-white flex items-center justify-center shadow-leftRightShadow"
+            >
+              <img src="../assets/left-arrow.svg" alt="" />
+            </div>
+            <div
+              class="w-10 h-10 rounded-full border border-solid border-lightPink bg-white flex items-center justify-center shadow-leftRightShadow"
+            >
+              <img src="../assets/right-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="block" src="../assets/bi_chat-quote-fill.svg" alt="" />
+          <p class="text-[1.875rem] tracking-[ -1.05px] leading-[1.2] font-semibold mt-5 mb-9">
+            Our business was in chaos before we started using this Saas
+            dashboard. We were drowning in data and couldn't make sense of it.
+            Thanks to this amazing tool, we now have clarity, and our
+            decision-making has become precise and data-driven.
+          </p>
+          <div class="flex gap-6 items-center">
+            <div>
+              <img class="w-full block" src="../assets/uiface.png" alt="">
+            </div>
+            <div>
+              <p class="text-2xl font-bold tracking-[-1.05px] ">Sarah Johnson</p>
+              <span class="text-xl font-medium tracking-[-0.805px] text-textcl-1">Marketing Manager</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <!-- Pricing section -->
+      
 
       <!-- Cta section -->
 
@@ -185,6 +236,8 @@
     </main>
 
     <!-- Footer -->
+
+    <div class="h-40"></div>
     <script src="../js/script.js"></script>
   </body>
 </html>

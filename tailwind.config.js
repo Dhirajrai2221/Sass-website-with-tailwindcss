@@ -27,6 +27,7 @@ module.exports = {
         navShadow: " 0px 4px 26px 0px rgba(191, 190, 190, 0.25)",
         cardShadow: "5px 8px 20px 0px rgba(191, 191, 191, 0.25)",
         toogleBtnShadow: "0 5px 8px 20px 0px rgba(191, 191, 191, 0.25)",
+        leftRightShadow: '0px 16px 20px 0px rgba(80, 80, 80, 0.20)',
       },
       gridTemplateColumns: {
         gridfluid: "repeat(auto-fit, minmax(10rem, 1fr))",
