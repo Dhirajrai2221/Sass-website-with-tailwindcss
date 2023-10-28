@@ -25,7 +25,11 @@ module.exports = {
       },
       boxShadow: {
         navShadow: " 0px 4px 26px 0px rgba(191, 190, 190, 0.25)",
-        toogleBtnShadow: "box 5px 8px 20px 0px rgba(191, 191, 191, 0.25)",
+        cardShadow: "5px 8px 20px 0px rgba(191, 191, 191, 0.25)",
+        toogleBtnShadow: "0 5px 8px 20px 0px rgba(191, 191, 191, 0.25)",
+      },
+      gridTemplateColumns: {
+        gridfluid: "repeat(auto-fit, minmax(10rem, 1fr))",
       },
     },
   },
