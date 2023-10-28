@@ -11,27 +11,77 @@
     />
     <link rel="stylesheet" href="tailwind.css" />
   </head>
-  <body>
-
+  <body class="font-Manrope bg-mainBgcl">
     <!-- HEADER-->
-    <header>
-        <nav>
-            <div>
-                <img src="" alt="">
-            </div>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-            <a href="#"></a>
-        </nav>
+    <header class="bg-white shadow-navShadow fixed z-50 w-full">
+      <nav class="text-black container flex h-[7.5rem] items-center">
+        <div class="mr-auto">
+          <p class="text-4xl font-extrabold tracking-tighter">Prosperico</p>
+        </div>
+        <ul class="flex font-medium text-xl gap-8 mr-[3.125rem]">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">FAQ's</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <a
+          class="inline-block text-lg font-medium bg-cl-1 text-white py-5 px-8 rounded-full"
+          href="#"
+          >Sign up</a
+        >
+      </nav>
     </header>
 
     <main>
       <!-- Hero section -->
+      <section class="pt-[7.5rem] mb-[7rem]">
+        <div class="container pt-[5rem] relative">
+          <div class="text-center max-w-xl mx-auto mb-20">
+            <p class="subtitle mb-11">
+              7 Day Free Trial - No Credit card required
+            </p>
+            <h1
+              class="text-[5.625rem] font-extrabold tracking-[-5px] leading-[.95] mb-14"
+            >
+              Unlock the
+              <span class="inline-block text-lightBlue">Power</span> of Data
+            </h1>
+            <img
+              class="absolute top-[23.5%] left-[56.5%]"
+              src="../assets/hero-decoration-img.svg"
+              alt=""
+            />
+            <p
+              class="text-[1.875rem] font-medium leading-[1.2] tracking-[-1px] mb-[2.875rem]"
+            >
+              Turn Data into Actionable Insights with Our SaaS Dashboard
+            </p>
+            <a class="btn-skt bg-cl-1" href="#">Get Started</a>
+          </div>
+          <div>
+            <img
+              class="max-full block"
+              src="../assets/SaaS Dashboard.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
 
       <!-- Feature section -->
+
+      <section class="container">
+        <div class=" text-center max-w-xl mx-auto flex flex-col gap-[1.375rem] items-center">
+          <p class="subtitle">Features</p>
+          <h2 class="text-[4.375rem] font-extrabold leading-[1]">
+            Real-Time Insights,
+            <span class="inline-block text-lightPurple">Real-Time Results</span>
+          </h2>
+          <p class="font-medium text-6 text-textcl-1">
+            Saas dashboard that enable users to perform various tasks and
+            activities related to their business
+          </p>
+        </div>
+      </section>
 
       <!-- Testimonials section -->
 
